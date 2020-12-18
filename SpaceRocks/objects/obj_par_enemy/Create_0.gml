@@ -10,3 +10,6 @@ HP = 1;
 
 originalSpeed = speed;
 bulletCounter = 0;
+immuneToLaser = false;
+
+exhaustCounter = 0;

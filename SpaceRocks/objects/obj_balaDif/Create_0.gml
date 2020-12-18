@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-speed = 8;
+event_inherited();
 
-creator = undefined;
-faction = undefined;
+image_blend = c_fuchsia;

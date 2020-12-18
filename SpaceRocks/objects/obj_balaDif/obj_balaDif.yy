@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_debris",
-    "path": "sprites/spr_debris/spr_debris.yy",
+    "name": "Sprite21",
+    "path": "sprites/Sprite21/Sprite21.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_bullet",
+    "path": "objects/obj_bullet/obj_bullet.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,8 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_debris","path":"objects/obj_debris/obj_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_balaDif","path":"objects/obj_balaDif/obj_balaDif.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_debris",
+  "name": "obj_balaDif",
   "tags": [],
   "resourceType": "GMObject",
 }

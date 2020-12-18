@@ -14,12 +14,12 @@ switch(room){
 		);
 		draw_text(
 			room_width/2,200,
-			@"Score 1,000 points to win!
-			UP: move
-			LEFT/RIGHT: changer direction
-			SPACE: shoot
+		@"Score 1,000 points to win!
+		UP: move
+		LEFT/RIGHT: change direction
+		SPACE: shoot
 			
-			>> PRESS ENTER TO START<<"
+		>> PRESS ENTER TO START<<"
 			);
 		draw_set_halign(fa_left);
 		break;
@@ -30,14 +30,17 @@ switch(room){
 		room_width/2,100,"YOU WON!", 3,3,0,c,c,c,c,1
 		);
 		draw_text(room_width/2,200, "PRESS ENTER TO RESTART");
-	
+		
 	case rm_gameover:
 		draw_set_halign(fa_center);
 		var c = c_red;
+		if(room != rm_win){
 		draw_text_transformed_color(
 		room_width/2,150,"GAME OVER!", 3,3,0,c,c,c,c,1
 		);
-		draw_text(room_width/2,250, "FINAL SCORE: "+string(score));
 		draw_text(room_width/2,350, "PRESS ENTER TO RESTART");
+		}
+		draw_text(room_width/2,250, "FINAL SCORE: "+string(score));
+		
 		break;
 }

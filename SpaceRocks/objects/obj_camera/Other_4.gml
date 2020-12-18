@@ -23,7 +23,7 @@ global.cameraY = clamp (global.cameraY,0,room_height-global.cameraHeight);
 
 camera_set_view_pos(view_camera[0],global.cameraX,global.cameraY);
 
-displayScale = 2;
+displayScale = 1.8;
 displayWidth = global.cameraWidth *displayScale;
 displayHeight = global.cameraHeight * displayScale;
 

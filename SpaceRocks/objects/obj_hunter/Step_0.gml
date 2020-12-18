@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 if(!instance_exists(obj_ship))exit;
 
 
@@ -22,7 +23,7 @@ if(point_distance(x,y,obj_ship.x,obj_ship.y)<250){
 	//fire a bullet
 	bulletCounter++;
 	if(bulletCounter >= 40){
-		create_bullet(image_angle,6,faction,id);
+		create_bullet(image_angle,3,faction,id);
 		bulletCounter = 0;
 	}
 		
